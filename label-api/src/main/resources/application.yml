@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: user-labels-system
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.userlabel: DEBUG
